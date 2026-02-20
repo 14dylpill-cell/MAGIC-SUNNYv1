@@ -1,49 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magic Sunny v1</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <nav>
-        <div class="logo">✨ MAGIC SUNNY v1</div>
-        <div class="nav-links">
-            <button class="btn" onclick="cloak()">Cloak Tab</button>
-            <input type="text" id="search" placeholder="Search games...">
+<div class="container">
+    <div class="grid">
+        <div class="card" onclick="launchGame('https://stimmingstation.github.io/subway-surfers/')">
+            <img src="https://play-lh.googleusercontent.com/9s9Ct7S9ayC-p1S899SUn7atYV9lXcz_9Xl6A6UXX489h2pS_S_n1V8_757876857" alt="Subway Surfers">
+            <h3>Subway Surfers</h3>
         </div>
-    </nav>
 
-    <div class="container">
-        <div class="grid">
-            <div class="card" onclick="launchGame('https://example.com/subway-surfers')">
-                <img src="https://img.itch.zone/aW1nLzI5Mjc5MDIucG5n/original/vY66v1.png" alt="Subway Surfers">
-                <h3>Subway Surfers</h3>
-            </div>
+        <div class="card" onclick="launchGame('https://precisionclient.vercel.app/')">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft">
+            <h3>Minecraft</h3>
+        </div>
 
-            <div class="card" onclick="launchGame('https://example.com/minecraft')">
-                <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft">
-                <h3>Minecraft</h3>
-            </div>
+        <div class="card" onclick="launchGame('https://www.blockaway.net')">
+            <img src="https://www.blockaway.net/img/logo.png" alt="Proxy">
+            <h3>Web Proxy (Unblock Anything)</h3>
+        </div>
 
-            <div class="card" onclick="launchGame('https://google.com')">
-                <img src="https://via.placeholder.com/150x100?text=Proxy+Browser" alt="Proxy">
-                <h3>Web Proxy</h3>
-            </div>
+        <div class="card" onclick="launchGame('https://now.gg/apps/roblox/9166/roblox.html')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roblox_player_icon_black.svg/1200px-Roblox_player_icon_black.svg.png" alt="Roblox">
+            <h3>Roblox (Cloud)</h3>
         </div>
     </div>
-
-    <div id="game-container" class="hidden">
-        <div class="controls">
-            <button class="close-btn" onclick="closeGame()">Back to Home</button>
-        </div>
-        <iframe id="game-frame" src=""></iframe>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-
+</div>
